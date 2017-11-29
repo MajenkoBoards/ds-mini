@@ -1314,6 +1314,7 @@ Element["" "MS22R" "S1" "DPST" 30.4800mm 87.9600mm -6.1300mm -0.7600mm 0 77 ""]
 	Attribute("manufacturer_part_number" "MS22R")
 	Attribute("vendor" "FARNELL")
 	Attribute("vendor_part_number" "2435145")
+	Attribute("generic" "no")
 	Pin[-2.5000mm 1.6000mm 2.2000mm 0.6000mm 2.3524mm 1.0000mm "1" "1" "edge2"]
 	Pin[0.0000 1.6000mm 2.2000mm 0.6000mm 2.3524mm 1.0000mm "2" "2" "edge2"]
 	Pin[2.5000mm 1.6000mm 2.2000mm 0.6000mm 2.3524mm 1.0000mm "3" "3" "edge2"]
@@ -1335,6 +1336,7 @@ Element["" "CC0805KKX5R5BB106" "C16" "10µF" 22.2000mm 63.1499mm -0.7000mm 1.9001
 	Attribute("manufacturer" "YAEGO")
 	Attribute("manufacturer_part_number" "CC0805KKX5R5BB106")
 	Attribute("vendor" "Farnell")
+    Attribute("generic" "yes: 0805 10uF MLCC 6.3V")
 	Attribute("vendor_part_number" "1816808")
 	Pad[-0.0998mm 0.8999mm 0.0998mm 0.8999mm 1.3000mm 0.6000mm 1.3800mm 1.2492mm "1" "1" "square"]
 	Pad[-0.0998mm -0.8999mm 0.0998mm -0.8999mm 1.3000mm 0.6000mm 1.3800mm 1.2492mm "2" "2" "square"]
@@ -1352,6 +1354,7 @@ Element["" "CC0805KKX5R5BB106" "C13" "10µF" 37.5000mm 25.0000mm -0.7500mm 1.9500
 	Attribute("manufacturer_part_number" "CC0805KKX5R5BB106")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1816808")
+    Attribute("generic" "yes: 0805 10uF MLCC 6.3V")
 	Pad[-0.0998mm 0.8999mm 0.0998mm 0.8999mm 1.3000mm 0.2800mm 1.3800mm 1.2492mm "1" "1" "square"]
 	Pad[-0.0998mm -0.8999mm 0.0998mm -0.8999mm 1.3000mm 0.2800mm 1.3800mm 1.2492mm "2" "2" "square"]
 	ElementLine [-1.0000mm 1.7500mm 1.0000mm 1.7500mm 0.1501mm]
@@ -1368,6 +1371,7 @@ Element["" "CC0603ZRY5V9BB104" "C12" "100nF" 37.5000mm 21.3000mm -0.8000mm -2.65
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
+    Attribute("generic" "yes: 0603 100nF MLCC")
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
@@ -1386,6 +1390,7 @@ Element["" "TPSB476K006R0250" "C2" "47uF" 36.8300mm 69.5960mm -3.9300mm -0.5960m
 	Attribute("manufacturer_part_number" "TPSB476K006R0250")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1135100")
+    Attribute("generic" "yes: 47uF Tantalum, case B")
 	Pad[-1.4500mm -0.6000mm -1.4500mm 0.6000mm 1.2000mm 0.6000mm 1.3000mm 1.1492mm "-" "2" "square"]
 	Pad[1.4500mm -0.6000mm 1.4500mm 0.6000mm 1.2000mm 0.6000mm 1.3000mm 1.1492mm "+" "1" "square"]
 	ElementLine [-2.3000mm -1.4000mm 2.1000mm -1.4000mm 0.1500mm]
@@ -1406,6 +1411,7 @@ Element["" "SD25-101-R" "L1" "100uH" 36.8300mm 81.2800mm 1.6200mm 3.2200mm 0 77 
 	Attribute("manufacturer_part_number" "SD25-101-R")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2112969")
+    Attribute("generic" "no")
 	Pad[0.7150mm 1.9750mm 1.1500mm 1.4300mm 0.3500mm 0.6000mm 0.6500mm 0.3500mm "1" "1" "edge2"]
 	Pad[1.1500mm 1.4300mm 1.7350mm 1.0600mm 0.3500mm 0.6000mm 0.6500mm 0.3500mm "1" "1" "edge2"]
 	Pad[1.7350mm 1.0600mm 2.4300mm 0.8700mm 0.3500mm 0.6000mm 0.6500mm 0.3500mm "1" "1" "edge2"]
@@ -1446,6 +1452,7 @@ Element["" "CC0805KKX5R5BB106" "C1" "10µF" 41.9100mm 81.2800mm -0.4100mm 1.9200m
 	Attribute("manufacturer_part_number" "CC0805KKX5R5BB106")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1816808")
+    Attribute("generic" "yes: 0805 10uF MLCC 6.3V")
 	Pad[-0.0998mm -0.8999mm 0.0998mm -0.8999mm 1.3000mm 0.6000mm 1.3800mm 1.2492mm "1" "1" "square"]
 	Pad[-0.0998mm 0.8999mm 0.0998mm 0.8999mm 1.3000mm 0.6000mm 1.3800mm 1.2492mm "2" "2" "square"]
 	ElementLine [-1.0000mm -1.7500mm 1.0000mm -1.7500mm 0.1501mm]
@@ -1462,6 +1469,7 @@ Element["" "CC0805KKX5R5BB106" "C14" "10µF" 37.9000mm 58.6000mm -0.7500mm 1.9000
 	Attribute("manufacturer_part_number" "CC0805KKX5R5BB106")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1816808")
+    Attribute("generic" "yes: 0805 10uF MLCC 6.3V")
 	Pad[-0.0998mm -0.8999mm 0.0998mm -0.8999mm 1.3000mm 0.6000mm 1.3800mm 1.2492mm "1" "1" "square"]
 	Pad[-0.0998mm 0.8999mm 0.0998mm 0.8999mm 1.3000mm 0.6000mm 1.3800mm 1.2492mm "2" "2" "square"]
 	ElementLine [-1.0000mm -1.7500mm 1.0000mm -1.7500mm 0.1501mm]
@@ -1478,6 +1486,7 @@ Element["" "MCWR06X1001FTL" "R10" "1K?" 22.4000mm 43.1750mm -0.7500mm 1.6750mm 0
 	Attribute("manufacturer_part_number" "MCWR06X1001FTL")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2446589")
+    Attribute("generic" "yes: 0603 1K resistor")
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
@@ -1496,6 +1505,7 @@ Element["onsolder" "2460" "B1" "1.5V" 30.4800mm 55.8800mm 0.0000 0.0000 1 100 "o
 	Attribute("manufacturer_part_number" "2460")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1702629")
+    Attribute("generic" "no")
 	Pin[0.0000 -26.0000mm 2.4000mm 0.6000mm 2.5524mm 0.8500mm "+" "1" "thermal(0X,1X)"]
 	Pin[0.0000 26.0000mm 2.4000mm 0.6000mm 2.5524mm 0.8500mm "-" "2" ""]
 	ElementLine [-9.0000mm -29.0000mm -9.0000mm 29.0000mm 0.1500mm]
@@ -1514,6 +1524,7 @@ Element["" "MC0063W0603110K" "R9" "10K?" 22.0060mm 71.0980mm -0.5080mm 1.7780mm 
 	Attribute("manufacturer_part_number" "MC0063W0603110K")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2130939")
+    Attribute("generic" "yes: 0603 10K resistor")
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
@@ -1532,6 +1543,7 @@ Element["" "CC0603ZRY5V9BB104" "C11" "100nF" 23.7000mm 24.7500mm -0.5750mm -2.60
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
+    Attribute("generic" "yes: 0603 100nF MLCC")
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
@@ -1550,6 +1562,8 @@ Element["hidename" "ICSP" "CONN1" "DNP" 19.0500mm 76.2000mm 0.0000 0.0000 0 100 
 	Attribute("manufacturer_part_number" "DNP")
 	Attribute("vendor" "DNP")
 	Attribute("vendor_part_number" "DNP")
+    Attribute("generic" "yes")
+    Attribute("exclude" "yes")
 	Pin[-0.1270mm -6.3500mm 1.6000mm 0.6000mm 1.7524mm 1.0000mm "1" "1" "square"]
 	Pin[0.1270mm -3.8100mm 1.6000mm 0.6000mm 1.7524mm 1.0000mm "2" "2" ""]
 	Pin[-0.1270mm -1.2700mm 1.6000mm 0.6000mm 1.7524mm 1.0000mm "3" "3" "thermal(0X,1X)"]
@@ -1604,6 +1618,7 @@ Element["" "KMS221G" "S3" "2N" 15.7480mm 29.7180mm 0.0520mm -4.1680mm 0 77 ""]
 	Attribute("manufacturer_part_number" "KMS221G")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1437638")
+    Attribute("generic" "no")
 	Pad[0.7500mm -2.0000mm 0.8500mm -2.0000mm 0.9000mm 0.6000mm 1.0500mm 0.8500mm "1" "1" "square,edge2"]
 	Pad[-0.8500mm -2.0000mm -0.7500mm -2.0000mm 0.9000mm 0.6000mm 1.0500mm 0.8500mm "2" "2" "square"]
 	Pad[-0.8500mm 2.1000mm -0.7500mm 2.1000mm 0.9000mm 0.6000mm 1.0500mm 0.8500mm "4" "4" "square"]
@@ -1624,6 +1639,7 @@ Element["" "KMS221G" "S2" "2N" 45.2120mm 29.7180mm -1.3620mm -4.2680mm 0 77 ""]
 	Attribute("manufacturer_part_number" "KMS221G")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1437638")
+    Attribute("generic" "no")
 	Pad[-0.8500mm 2.0000mm -0.7500mm 2.0000mm 0.9000mm 0.6000mm 1.0500mm 0.8500mm "1" "1" "square"]
 	Pad[0.7500mm 2.0000mm 0.8500mm 2.0000mm 0.9000mm 0.6000mm 1.0500mm 0.8500mm "2" "2" "square,edge2"]
 	Pad[0.7500mm -2.1000mm 0.8500mm -2.1000mm 0.9000mm 0.6000mm 1.0500mm 0.8500mm "4" "4" "square,edge2"]
@@ -1644,6 +1660,7 @@ Element["" "RN4871-V-RM118" "U3" "BLE" 30.4800mm 21.5900mm -5.0800mm 4.7600mm 0 
 	Attribute("manufacturer_part_number" "RN4871-V/RM118")
 	Attribute("vendor" "MICROCHIP")
 	Attribute("vendor_part_number" "RN4871-V/RM118")
+    Attribute("generic" "no")
 	Pad[-4.6500mm 2.4000mm -3.8500mm 2.4000mm 0.7000mm 0.6000mm 0.8001mm 0.6492mm "P1_7" "5" "square"]
 	Pad[-4.6500mm 1.2000mm -3.8500mm 1.2000mm 0.7000mm 0.6000mm 0.8001mm 0.6492mm "P1_3" "4" "square"]
 	Pad[-4.6500mm 0.0000 -3.8500mm 0.0000 0.7000mm 0.6000mm 0.8001mm 0.6492mm "P1_2" "3" "square"]
@@ -1681,6 +1698,7 @@ Element["hidename" "2212S-08SG-85" "CONN2" "8" 19.0500mm 55.8800mm 0.0000 0.0000
 	Attribute("manufacturer_part_number" "2212S-08SG-85")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1593463")
+    Attribute("generic" "yes: 2.54mm 8 way socket")
 	Pin[0.0000 -8.8900mm 1.6000mm 0.6000mm 1.7524mm 1.0000mm "1" "1" ""]
 	Pin[0.0000 -6.3500mm 1.6000mm 0.6000mm 1.7524mm 1.0000mm "2" "2" ""]
 	Pin[0.0000 -3.8100mm 1.6000mm 0.6000mm 1.7524mm 1.0000mm "3" "3" ""]
@@ -1749,6 +1767,7 @@ Element["hidename" "2212S-08SG-85" "CONN3" "8" 41.9100mm 55.8800mm 0.0000 0.0000
 	Attribute("manufacturer_part_number" "2212S-08SG-85")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1593463")
+    Attribute("generic" "yes: 2.54mm 8 way socket")
 	Pin[0.0000 8.8900mm 1.6000mm 0.6000mm 1.7524mm 1.0000mm "1" "1" "thermal(0X,1X)"]
 	Pin[0.0000 6.3500mm 1.6000mm 0.6000mm 1.7524mm 1.0000mm "2" "2" ""]
 	Pin[0.0000 3.8100mm 1.6000mm 0.6000mm 1.7524mm 1.0000mm "3" "3" ""]
@@ -1817,6 +1836,7 @@ Element["" "MC0603N180J500CT" "C10" "18pf" 27.2500mm 62.4500mm -0.7620mm -2.5400
 	Attribute("manufacturer_part_number" "MC0603N180J500CT")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1759056")
+    Attribute("generic" "yes: 0603 18pF MLCC (match X1)")
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
@@ -1835,6 +1855,7 @@ Element["" "MC0603N180J500CT" "C9" "18pf" 24.7500mm 62.4500mm -0.5080mm -2.5400m
 	Attribute("manufacturer_part_number" "MC0603N180J500CT")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1759056")
+    Attribute("generic" "yes: 0603 18pF MLCC (match X1)")
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
@@ -1853,6 +1874,7 @@ Element["" "TC115331EMTTR" "U1" "3.3V" 36.8300mm 74.4220mm -3.8300mm -0.4220mm 0
 	Attribute("manufacturer_part_number" "TC115331EMTTR")
 	Attribute("vendor" "MICROCHIP")
 	Attribute("vendor_part_number" "TC115331EMTTR")
+    Attribute("generic" "no")
 	Pad[-0.7200mm 0.3800mm -0.4800mm 0.6200mm 0.5500mm 0.6000mm 0.8500mm 0.5000mm "PS" "TAB" "edge2"]
 	Pad[0.4800mm 0.6200mm 0.7200mm 0.3800mm 0.5500mm 0.6000mm 0.8500mm 0.5000mm "PS" "TAB" "edge2"]
 	Pad[0.4800mm -0.6200mm 0.7200mm -0.3800mm 0.5500mm 0.6000mm 0.8500mm 0.5000mm "PS" "TAB" ""]
@@ -1884,6 +1906,7 @@ Element["" "1N5819HW-7-F" "D1" "1A" 41.9100mm 73.6600mm 1.2400mm 1.5900mm 0 64 "
 	Attribute("manufacturer_part_number" "1N5819HW-7-F")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1773475")
+    Attribute("generic" "yes: SOD123 Schottky 1A")
 	Pad[0.0000 -0.2000mm 0.0000 0.3000mm 0.7000mm 0.6000mm 0.7500mm 0.6492mm "1" "1" "square"]
 	Pad[0.0000 3.5000mm 0.0000 4.0000mm 0.7000mm 0.6000mm 0.7500mm 0.6492mm "2" "2" "square,edge2"]
 	ElementLine [-0.8500mm 0.6500mm 0.8500mm 0.6500mm 0.1500mm]
@@ -1901,6 +1924,7 @@ Element["" "CC0603ZRY5V9BB104" "C8" "100nF" 23.2500mm 51.5000mm 1.8000mm -0.5000
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
+    Attribute("generic" "yes: 0603 100nF MLCC")
 	Pad[-0.7750mm -0.0400mm -0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[0.7750mm -0.0400mm 0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [1.5000mm -0.7500mm 1.5000mm 0.7500mm 0.1501mm]
@@ -1919,6 +1943,7 @@ Element["selected" "CC0603ZRY5V9BB104" "C7" "100nF" 31.2000mm 47.8250mm -0.5500m
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
+    Attribute("generic" "yes: 0603 100nF MLCC")
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.2800mm 0.8500mm 0.6850mm "1" "1" "selected,square"]
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.2800mm 0.8550mm 0.6850mm "2" "2" "selected,square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
@@ -1937,6 +1962,7 @@ Element["" "CC0603ZRY5V9BB104" "C6" "100nF" 37.9000mm 54.6750mm -0.5000mm -2.675
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
+    Attribute("generic" "yes: 0603 100nF MLCC")
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
@@ -1955,6 +1981,7 @@ Element["" "BSS138P" "Q3" "900m?" 33.0200mm 40.6400mm -1.9200mm -2.4400mm 0 77 "
 	Attribute("manufacturer_part_number" "BSS138P")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1859849")
+    Attribute("generic" "yes: N-channel FET, SOT-23, <2V Vgs")
 	Pad[-0.9500mm 0.7000mm -0.9500mm 1.6500mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "G" "1" "square,edge2"]
 	Pad[0.0000 -1.6500mm 0.0000 -0.7000mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "D" "2" "square"]
 	Pad[0.9500mm 0.7000mm 0.9500mm 1.6500mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "S" "3" "square,edge2"]
@@ -1974,6 +2001,7 @@ Element["" "MC0063W06035100R" "R5" "100?" 33.0200mm 45.2120mm -2.7700mm -0.5120m
 	Attribute("manufacturer_part_number" "MC0063W06035100R")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "9331689")
+    Attribute("generic" "yes: 0603 100R resistor")
 	Pad[0.7750mm -0.0400mm 0.7750mm 0.0400mm 0.7850mm 0.2800mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.7750mm -0.0400mm -0.7750mm 0.0400mm 0.7850mm 0.2800mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-1.5000mm -0.7500mm -1.5000mm 0.7500mm 0.1501mm]
@@ -1992,6 +2020,7 @@ Element["" "MC0063W0603110K" "R7" "10K?" 33.0200mm 43.6880mm -2.7700mm -0.1880mm
 	Attribute("manufacturer_part_number" "MC0063W0603110K")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2130939")
+    Attribute("generic" "yes: 0603 10K resistor")
 	Pad[0.7750mm -0.0400mm 0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.7750mm -0.0400mm -0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-1.5000mm -0.7500mm -1.5000mm 0.7500mm 0.1501mm]
@@ -2010,6 +2039,7 @@ Element["" "MC0063W0603110K" "R6" "10K?" 35.8140mm 40.6400mm -0.5140mm 1.6600mm 
 	Attribute("manufacturer_part_number" "MC0063W0603110K")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2130939")
+    Attribute("generic" "yes: 0603 10K resistor")
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
@@ -2028,6 +2058,7 @@ Element["" "MC0063W06035100R" "R1" "100?" 27.1780mm 45.2120mm -2.7280mm -0.4120m
 	Attribute("manufacturer_part_number" "MC0063W06035100R")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "9331689")
+    Attribute("generic" "yes: 0603 100R resistor")
 	Pad[0.7750mm -0.0400mm 0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.7750mm -0.0400mm -0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-1.5000mm -0.7500mm -1.5000mm 0.7500mm 0.1501mm]
@@ -2046,6 +2077,7 @@ Element["" "MC0063W0603110K" "R3" "10K?" 27.1780mm 43.6880mm -2.8280mm -0.3880mm
 	Attribute("manufacturer_part_number" "MC0063W0603110K")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2130939")
+    Attribute("generic" "yes: 0603 10K resistor")
 	Pad[0.7750mm -0.0400mm 0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.7750mm -0.0400mm -0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-1.5000mm -0.7500mm -1.5000mm 0.7500mm 0.1501mm]
@@ -2064,6 +2096,7 @@ Element["" "MC0063W0603110K" "R2" "10K?" 29.9720mm 40.6400mm -0.5220mm 1.5600mm 
 	Attribute("manufacturer_part_number" "MC0063W0603110K")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2130939")
+    Attribute("generic" "yes: 0603 10K resistor")
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
@@ -2082,6 +2115,7 @@ Element["" "BSS138P" "Q1" "900m?" 27.1780mm 40.6400mm -1.8280mm -2.4400mm 0 77 "
 	Attribute("manufacturer_part_number" "BSS138P")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1859849")
+    Attribute("generic" "yes: N-channel FET <2V Vgs")
 	Pad[-0.9500mm 0.7000mm -0.9500mm 1.6500mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "G" "1" "square,edge2"]
 	Pad[0.0000 -1.6500mm 0.0000 -0.7000mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "D" "2" "square"]
 	Pad[0.9500mm 0.7000mm 0.9500mm 1.6500mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "S" "3" "square,edge2"]
@@ -2096,6 +2130,8 @@ Element["" "BSS138P" "Q1" "900m?" 27.1780mm 40.6400mm -1.8280mm -2.4400mm 0 77 "
 
 Element["hidename" "hole_M3_plated" "hole_M3_plated" "" 43.1800mm 21.5900mm -0.7620mm -0.7620mm 0 100 ""]
 (
+    Attribute("generic" "yes")
+    Attribute("exclude" "yes")
 	Pin[0.0000 0.0000 4.7300mm 1.2700mm 2.6472mm 3.1001mm "" "1" ""]
 	ElementArc [0.0000 0.0000 3.1001mm 3.1001mm 0 360 0.2540mm]
 	ElementArc [0.0000 0.0000 1.7272mm 1.7272mm 0 360 0.2540mm]
@@ -2104,6 +2140,8 @@ Element["hidename" "hole_M3_plated" "hole_M3_plated" "" 43.1800mm 21.5900mm -0.7
 
 Element["hidename" "hole_M3_plated" "hole_M3_plated1" "" 17.7800mm 21.5900mm -0.7620mm -0.7620mm 0 100 ""]
 (
+    Attribute("generic" "yes")
+    Attribute("exclude" "yes")
 	Pin[0.0000 0.0000 4.7300mm 1.2700mm 3.0536mm 3.1001mm "" "1" ""]
 	ElementArc [0.0000 0.0000 3.1001mm 3.1001mm 0 360 0.2540mm]
 	ElementArc [0.0000 0.0000 1.7272mm 1.7272mm 0 360 0.2540mm]
@@ -2112,6 +2150,8 @@ Element["hidename" "hole_M3_plated" "hole_M3_plated1" "" 17.7800mm 21.5900mm -0.
 
 Element["hidename" "hole_M3_plated" "hole_M3_plated2" "" 43.1800mm 87.6300mm -0.7620mm -0.7620mm 0 100 ""]
 (
+    Attribute("generic" "yes")
+    Attribute("exclude" "yes")
 	Pin[0.0000 0.0000 4.7300mm 1.2700mm 2.3932mm 3.1001mm "" "1" ""]
 	ElementArc [0.0000 0.0000 3.1001mm 3.1001mm 0 360 0.2540mm]
 	ElementArc [0.0000 0.0000 1.7272mm 1.7272mm 0 360 0.2540mm]
@@ -2120,6 +2160,8 @@ Element["hidename" "hole_M3_plated" "hole_M3_plated2" "" 43.1800mm 87.6300mm -0.
 
 Element["hidename" "hole_M3_plated" "hole_M3_plated3" "" 17.7800mm 87.6300mm -0.7620mm -0.7620mm 0 100 ""]
 (
+    Attribute("generic" "yes")
+    Attribute("exclude" "yes")
 	Pin[0.0000 0.0000 4.7300mm 1.2700mm 1.5804mm 3.1001mm "" "1" ""]
 	ElementArc [0.0000 0.0000 3.1001mm 3.1001mm 0 360 0.2540mm]
 	ElementArc [0.0000 0.0000 1.7272mm 1.7272mm 0 360 0.2540mm]
@@ -2133,6 +2175,7 @@ Element["" "KPHCM-2012CGCK" "D2" "Green" 18.9000mm 38.0000mm 2.1340mm -0.5460mm 
 	Attribute("manufacturer_part_number" "KPHCM-2012CGCK")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1686075")
+    Attribute("generic" "yes: 0805 LED (Green)")
 	Pad[-1.0500mm 0.0000 -1.0500mm 0.0000 1.2000mm 0.6000mm 1.2501mm 1.1492mm "2" "2" "square"]
 	Pad[1.0500mm 0.0000 1.0500mm 0.0000 1.2000mm 0.6000mm 1.2501mm 1.1492mm "1" "1" "square,edge2"]
 	ElementLine [1.8500mm -0.8000mm 1.8500mm 0.8000mm 0.1501mm]
@@ -2150,6 +2193,7 @@ Element["" "KPHCM-2012CGCK" "D3" "Green" 18.9000mm 40.2000mm 2.1000mm -0.4000mm 
 	Attribute("manufacturer_part_number" "KPHCM-2012CGCK")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1686075")
+    Attribute("generic" "yes: 0805 LED (Green)")
 	Pad[-1.0500mm 0.0000 -1.0500mm 0.0000 1.2000mm 0.6000mm 1.2501mm 1.1492mm "2" "2" "square"]
 	Pad[1.0500mm 0.0000 1.0500mm 0.0000 1.2000mm 0.6000mm 1.2501mm 1.1492mm "1" "1" "square,edge2"]
 	ElementLine [1.8500mm -0.8000mm 1.8500mm 0.8000mm 0.1501mm]
@@ -2167,6 +2211,7 @@ Element["" "KPHCM-2012CGCK" "D4" "Green" 18.9000mm 42.4000mm 1.3000mm 1.0500mm 0
 	Attribute("manufacturer_part_number" "KPHCM-2012CGCK")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1686075")
+    Attribute("generic" "yes: 0805 LED (Green)")
 	Pad[-1.0500mm 0.0000 -1.0500mm 0.0000 1.2000mm 0.6000mm 1.2501mm 1.1492mm "2" "2" "square"]
 	Pad[1.0500mm 0.0000 1.0500mm 0.0000 1.2000mm 0.6000mm 1.2501mm 1.1492mm "1" "1" "square,edge2"]
 	ElementLine [1.8500mm -0.8000mm 1.8500mm 0.8000mm 0.1501mm]
@@ -2184,6 +2229,7 @@ Element["" "ASEMB-8.000MHZ-LY-T" "U2" "8MHz" 23.2460mm 56.0380mm -0.7460mm 2.262
 	Attribute("manufacturer_part_number" "ASEMB-8.000MHZ-LY-T")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2467921")
+    Attribute("generic" "no")
 	Pad[-1.0500mm -1.0000mm -1.0500mm -0.9000mm 0.9000mm 0.6000mm 0.9501mm 0.8492mm "VDD" "4" "square"]
 	Pad[1.0500mm -1.0000mm 1.0500mm -0.9000mm 0.9000mm 0.6000mm 0.9501mm 0.8492mm "CLK" "3" "square"]
 	Pad[-1.0500mm 0.9000mm -1.0500mm 1.0000mm 0.9000mm 0.6000mm 0.9501mm 0.8492mm "E" "1" "square,edge2"]
@@ -2200,6 +2246,7 @@ Element["" "CC0603ZRY5V9BB104" "C3" "100nF" 23.2500mm 53.0000mm 1.8000mm -0.5000
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
+    Attribute("generic" "yes: 0603 100nF MLCC")
 	Pad[0.7750mm -0.0400mm 0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.7750mm -0.0400mm -0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-1.5000mm -0.7500mm -1.5000mm 0.7500mm 0.1501mm]
@@ -2218,6 +2265,7 @@ Element["" "MCWR06X1001FTL" "R8" "1K?" 35.7940mm 34.7000mm -0.4940mm 1.6500mm 0 
 	Attribute("manufacturer_part_number" "MCWR06X1001FTL")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2446589")
+    Attribute("generic" "yes: 0603 1K resistor")
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
@@ -2236,6 +2284,7 @@ Element["" "IRLML6402PBF" "Q4" "65m?" 33.0000mm 34.7000mm -1.9000mm -2.3500mm 0 
 	Attribute("manufacturer_part_number" "IRLML6402PBF")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "9103503")
+    Attribute("generic" "yes: P-channel FET, >1A, <2V Vgs, SOT-23")
 	Pad[-0.9500mm 0.7000mm -0.9500mm 1.6500mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "G" "1" "square,edge2"]
 	Pad[0.0000 -1.6500mm 0.0000 -0.7000mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "S" "2" "square"]
 	Pad[0.9500mm 0.7000mm 0.9500mm 1.6500mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "D" "3" "square,edge2"]
@@ -2255,6 +2304,7 @@ Element["" "MCWR06X1001FTL" "R4" "1K?" 29.9520mm 34.7000mm -0.5520mm 1.6500mm 0 
 	Attribute("manufacturer_part_number" "MCWR06X1001FTL")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2446589")
+    Attribute("generic" "yes: 0603 1K resistor")
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
@@ -2273,6 +2323,7 @@ Element["" "IRLML6402PBF" "Q2" "65m?" 27.1580mm 34.7000mm -1.8580mm -2.4000mm 0 
 	Attribute("manufacturer_part_number" "IRLML6402PBF")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "9103503")
+    Attribute("generic" "yes: P-channel FET, >1A, <2V Vgs, SOT-23")
 	Pad[-0.9500mm 0.7000mm -0.9500mm 1.6500mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "G" "1" "square,edge2"]
 	Pad[0.0000 -1.6500mm 0.0000 -0.7000mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "S" "2" "square"]
 	Pad[0.9500mm 0.7000mm 0.9500mm 1.6500mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "D" "3" "square,edge2"]
@@ -2292,6 +2343,7 @@ Element["" "CMR200T32.768KDZY-UT" "X1" "32768Hz" 26.0000mm 67.2500mm -0.3500mm 8
 	Attribute("manufacturer_part_number" "CMR200T32.768KDZY-UT")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1703589")
+    Attribute("generic" "yes: 32.768kHz SMD watch crystal")
 	Pad[-1.2700mm -2.0000mm -1.2700mm -0.5000mm 1.0000mm 0.6000mm 1.0524mm 0.9024mm "1" "1" "square"]
 	Pad[1.2700mm -2.0000mm 1.2700mm -0.5000mm 1.0000mm 0.6000mm 1.0524mm 0.9024mm "2" "2" "square"]
 	Pad[0.0000 3.0000mm 0.0000 6.5000mm 2.5000mm 0.6000mm 2.5524mm 2.1524mm "3" "3" "square,edge2"]
@@ -2305,6 +2357,7 @@ Element["" "CC0603ZRY5V9BB104" "C5" "100nF" 30.7000mm 63.1500mm -0.5000mm 1.6500
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
+    Attribute("generic" "yes: 0603 100nF MLCC")
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
@@ -2323,6 +2376,7 @@ Element["" "CC0603ZRY5V9BB104" "C4" "100nF" 29.2000mm 63.1500mm -0.6000mm 1.6500
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
+    Attribute("generic" "yes: 0603 100nF MLCC")
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
@@ -2334,13 +2388,14 @@ Element["" "CC0603ZRY5V9BB104" "C4" "100nF" 29.2000mm 63.1500mm -0.6000mm 1.6500
 
 )
 
-Element["hidename" "PIC32MX150F128C-I/TL" "U4" "NA" 30.4500mm 55.9000mm 0.0000 0.0000 0 100 ""]
+Element["hidename" "PIC32MX150F128C-I-TL" "U4" "NA" 30.4500mm 55.9000mm 0.0000 0.0000 0 100 ""]
 (
 	Attribute("device" "PIC32MX150F128C-I/TL")
 	Attribute("manufacturer" "MICROCHIP")
 	Attribute("manufacturer_part_number" "PIC32MX150F128C-I/TL")
 	Attribute("vendor" "MICROCHIP")
 	Attribute("vendor_part_number" "PIC32MX150F128C-I/TL")
+    Attribute("generic" "no")
 	Pad[-2.2500mm -2.2500mm -2.2500mm -2.2500mm 0.2500mm 0.6000mm 0.4024mm 0.2524mm "PGC1/RB1" "36" "square"]
 	Pad[-2.2500mm -1.7500mm -2.2500mm -1.7500mm 0.2500mm 0.6000mm 0.4024mm 0.2524mm "RB2/SDA2" "1" "square"]
 	Pad[-2.2500mm -1.2500mm -2.2500mm -1.2500mm 0.2500mm 0.6000mm 0.4024mm 0.2524mm "RB3/SCL2" "2" "square"]
@@ -2400,6 +2455,7 @@ Element["" "CC0603ZRY5V9BB104" "C18" "100nF" 40.6000mm 26.1000mm -1.4500mm -1.90
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
+    Attribute("generic" "yes: 0603 100nF MLCC")
 	Pad[0.7750mm -0.0400mm 0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.7750mm -0.0400mm -0.7750mm 0.0400mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-1.5000mm -0.7500mm -1.5000mm 0.7500mm 0.1501mm]
@@ -2418,6 +2474,7 @@ Element["" "MC0063W060313K3" "R14" "3.3K?" 39.0000mm 47.1000mm -0.4500mm 1.6500m
 	Attribute("manufacturer_part_number" "MC0063W060313K3")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "9331026")
+    Attribute("generic" "yes: 0603 3K3 resistor")
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
@@ -2436,6 +2493,7 @@ Element["" "MC0063W060313K3" "R13" "3.3K?" 37.5000mm 47.1000mm -0.8500mm 1.6500m
 	Attribute("manufacturer_part_number" "MC0063W060313K3")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "9331026")
+    Attribute("generic" "yes: 0603 3K3 resistor")
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
@@ -2454,6 +2512,7 @@ Element["" "CC0603ZRY5V9BB104" "C15" "100nF" 40.7000mm 42.1000mm -0.6500mm 1.700
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
+    Attribute("generic" "yes: 0603 100nF MLCC")
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
@@ -2472,6 +2531,7 @@ Element["" "EMC1001-AFZQ-TR" "U5" "NA" 43.5000mm 42.1000mm -0.9500mm 2.3000mm 0 
 	Attribute("manufacturer_part_number" "EMC1001-AFZQ-TR")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2361928")
+    Attribute("generic" "no")
 	Pad[0.9500mm -1.6500mm 0.9500mm -0.7000mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "ADDR" "1" "square"]
 	Pad[0.0000 -1.6500mm 0.0000 -0.7000mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "GND" "2" "square"]
 	Pad[-0.9500mm -1.6500mm -0.9500mm -0.7000mm 0.5000mm 0.6000mm 0.6502mm 0.4470mm "VDD" "3" "square"]
@@ -2498,6 +2558,7 @@ Element["" "MC0063W0603110K" "R11" "10K?" 42.5500mm 37.9500mm -0.6000mm -2.6000m
 	Attribute("manufacturer_part_number" "MC0063W0603110K")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2130939")
+    Attribute("generic" "yes: 0603 10K resistor")
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
@@ -2516,6 +2577,7 @@ Element["" "MC0063W0603110K" "R12" "10K?" 44.0500mm 37.9500mm -0.4500mm -2.6000m
 	Attribute("manufacturer_part_number" "MC0063W0603110K")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2130939")
+    Attribute("generic" "yes: 0603 10K resistor")
 	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.6000mm 0.8500mm 0.6850mm "1" "1" "square"]
 	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.6000mm 0.8550mm 0.6850mm "2" "2" "square"]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
@@ -2534,6 +2596,7 @@ Element["" "TPSB476K006R0250" "C17" "47uF" 39.4570mm 37.6399mm -1.7367mm 2.5740m
 	Attribute("manufacturer_part_number" "TPSB476K006R0250")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1135100")
+    Attribute("generic" "yes: 47uF Tantalum, case B")
 	Pad[-0.6000mm 1.4500mm 0.6000mm 1.4500mm 1.2000mm 0.6000mm 1.3000mm 1.1492mm "-" "2" "square"]
 	Pad[-0.6000mm -1.4500mm 0.6000mm -1.4500mm 1.2000mm 0.6000mm 1.3000mm 1.1492mm "+" "1" "square"]
 	ElementLine [-1.4000mm -2.1000mm -1.4000mm 2.3000mm 0.1500mm]
@@ -2554,6 +2617,7 @@ Element["" "47L16-I-ST" "U6" "16kbit" 39.6603mm 30.9626mm 1.5972mm 2.0328mm 0 59
 	Attribute("manufacturer_part_number" "47L16-I/ST")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2674856")
+    Attribute("generic" "no")
 	Pad[-0.9750mm 2.4500mm -0.9750mm 3.4500mm 0.4500mm 0.6000mm 0.5500mm 0.4000mm "VCAP" "1" "square,edge2"]
 	Pad[-0.3250mm 2.4500mm -0.3250mm 3.4500mm 0.4500mm 0.6000mm 0.5500mm 0.4000mm "A1" "2" "square,edge2"]
 	Pad[0.3250mm 2.4500mm 0.3250mm 3.4500mm 0.4500mm 0.6000mm 0.5500mm 0.4000mm "A1" "3" "square,edge2"]
