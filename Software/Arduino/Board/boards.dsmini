@@ -1,0 +1,24 @@
+dsmini.name=DataStation Mini
+dsmini.group=Makerology
+dsmini.platform=pic32
+dsmini.build.board=_BOARD_DSMINI_
+dsmini.ccflags=-Map="map.map"
+dsmini.ldscript=chipKIT-application-32MX150F128.ld
+dsmini.build.ldscript.path={build.variant.path}
+
+dsmini.usb.enabled=false
+
+# Use this -G1024 option ONLY for boards with 64K RAM or less
+dsmini.compiler.c.extra_flags=-G1024
+dsmini.compiler.cpp.extra_flags=-G1024
+dsmini.upload.protocol=stk500v2
+
+# 128KB - 4K for EEPROM - 4K for bootloader
+dsmini.upload.maximum_size=122880
+dsmini.upload.speed=115200
+dsmini.upload.tool=pic32prog
+
+dsmini.build.mcu=32MX150F128C
+dsmini.build.f_cpu=40000000L
+dsmini.build.core=pic32
+dsmini.build.variant=DSMini

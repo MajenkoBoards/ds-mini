@@ -1,0 +1,14 @@
+description=DSMini
+group=Makerology
+platform=pic32
+board=_BOARD_MAKEROLOGY_DSMINI_
+board.flags=
+ldscript=chipKIT-application-32MX150F128${upload.${prefs:board.${prefs:board}.programmer}.ldsuffix}.ld
+upload.protocol=stk500v2
+upload.maximum_size=122880
+upload.speed=115200
+build.mcu=32MX150F128C
+build.f_cpu=40000000L
+family=pic32
+core=chipkit
+name=makerology-dsmini
