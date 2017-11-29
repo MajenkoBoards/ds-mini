@@ -1,5 +1,5 @@
 # PcbBOM Version 1.0
-# Date: Wed Nov 29 11:54:34 2017 UTC
+# Date: Wed 29 Nov 2017 12:05:11 GMT UTC
 # Author: Matt Jenkins
 # Title: (unknown) - PCB BOM
 # Quantity, Description, Value, RefDes
@@ -14,7 +14,7 @@
 7,"MC0063W0603110K","10K?",R9 R7 R6 R3 R2 R11 R12 
 1,"ICSP","DNP",CONN1 
 2,"KMS221G","2N",S3 S2 
-1,"RN4871-V-RM118","unknown",U3 
+1,"RN4871-V-RM118","BLE",U3 
 2,"2212S-08SG-85","8",CONN2 CONN3 
 2,"MC0603N180J500CT","18pf",C10 C9 
 1,"TC115331EMTTR","3.3V",U1 
@@ -26,7 +26,7 @@
 1,"ASEMB-8.000MHZ-LY-T","8MHz",U2 
 2,"IRLML6402PBF","65m?",Q4 Q2 
 1,"CMR200T32.768KDZY-UT","32768Hz",X1 
-1,"(unknown)","NA",U4 
+1,"PIC32MX150F128C-I/TL","NA",U4 
 2,"MC0063W060313K3","3.3K?",R14 R13 
 1,"EMC1001-AFZQ-TR","NA",U5 
 1,"47L16-I-ST","16kbit",U6 

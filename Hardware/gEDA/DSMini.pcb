@@ -1312,8 +1312,8 @@ Element["" "MS22R" "S1" "DPST" 30.4800mm 87.9600mm -6.1300mm -0.7600mm 0 77 ""]
 	Attribute("device" "MS22R")
 	Attribute("manufacturer" "APEM")
 	Attribute("manufacturer_part_number" "MS22R")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
+	Attribute("vendor" "FARNELL")
+	Attribute("vendor_part_number" "2435145")
 	Pin[-2.5000mm 1.6000mm 2.2000mm 0.6000mm 2.3524mm 1.0000mm "1" "1" "edge2"]
 	Pin[0.0000 1.6000mm 2.2000mm 0.6000mm 2.3524mm 1.0000mm "2" "2" "edge2"]
 	Pin[2.5000mm 1.6000mm 2.2000mm 0.6000mm 2.3524mm 1.0000mm "3" "3" "edge2"]
@@ -1332,7 +1332,7 @@ Element["" "MS22R" "S1" "DPST" 30.4800mm 87.9600mm -6.1300mm -0.7600mm 0 77 ""]
 Element["" "CC0805KKX5R5BB106" "C16" "10µF" 22.2000mm 63.1499mm -0.7000mm 1.9001mm 0 64 ""]
 (
 	Attribute("device" "CC0805KKX5R5BB106")
-	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer" "YAEGO")
 	Attribute("manufacturer_part_number" "CC0805KKX5R5BB106")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1816808")
@@ -1348,7 +1348,7 @@ Element["" "CC0805KKX5R5BB106" "C16" "10µF" 22.2000mm 63.1499mm -0.7000mm 1.9001
 Element["" "CC0805KKX5R5BB106" "C13" "10µF" 37.5000mm 25.0000mm -0.7500mm 1.9500mm 0 64 ""]
 (
 	Attribute("device" "CC0805KKX5R5BB106")
-	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer" "YAEGO")
 	Attribute("manufacturer_part_number" "CC0805KKX5R5BB106")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1816808")
@@ -1442,7 +1442,7 @@ Element["" "SD25-101-R" "L1" "100uH" 36.8300mm 81.2800mm 1.6200mm 3.2200mm 0 77 
 Element["" "CC0805KKX5R5BB106" "C1" "10µF" 41.9100mm 81.2800mm -0.4100mm 1.9200mm 0 64 ""]
 (
 	Attribute("device" "CC0805KKX5R5BB106")
-	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer" "YAEGO")
 	Attribute("manufacturer_part_number" "CC0805KKX5R5BB106")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1816808")
@@ -1458,7 +1458,7 @@ Element["" "CC0805KKX5R5BB106" "C1" "10µF" 41.9100mm 81.2800mm -0.4100mm 1.9200m
 Element["" "CC0805KKX5R5BB106" "C14" "10µF" 37.9000mm 58.6000mm -0.7500mm 1.9000mm 0 64 ""]
 (
 	Attribute("device" "CC0805KKX5R5BB106")
-	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer" "YAEGO")
 	Attribute("manufacturer_part_number" "CC0805KKX5R5BB106")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "1816808")
@@ -1637,14 +1637,14 @@ Element["" "KMS221G" "S2" "2N" 45.2120mm 29.7180mm -1.3620mm -4.2680mm 0 77 ""]
 
 )
 
-Element["" "RN4871-V-RM118" "U3" "unknown" 30.4800mm 21.5900mm -5.0800mm 4.7600mm 0 64 ""]
+Element["" "RN4871-V-RM118" "U3" "BLE" 30.4800mm 21.5900mm -5.0800mm 4.7600mm 0 64 ""]
 (
 	Attribute("device" "RN4871-V/RM118")
 	Attribute("manufacturer" "MICROCHIP")
 	Attribute("manufacturer_part_number" "RN4871-V/RM118")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pad[-4.6500mm 2.4000mm -3.8500mm 2.4000mm 0.7000mm 0.6000mm 0.8001mm 0.6492mm "P1_7" "5" "square,warn"]
+	Attribute("vendor" "MICROCHIP")
+	Attribute("vendor_part_number" "RN4871-V/RM118")
+	Pad[-4.6500mm 2.4000mm -3.8500mm 2.4000mm 0.7000mm 0.6000mm 0.8001mm 0.6492mm "P1_7" "5" "square"]
 	Pad[-4.6500mm 1.2000mm -3.8500mm 1.2000mm 0.7000mm 0.6000mm 0.8001mm 0.6492mm "P1_3" "4" "square"]
 	Pad[-4.6500mm 0.0000 -3.8500mm 0.0000 0.7000mm 0.6000mm 0.8001mm 0.6492mm "P1_2" "3" "square"]
 	Pad[-4.6500mm -1.2000mm -3.8500mm -1.2000mm 0.7000mm 0.6000mm 0.8001mm 0.6492mm "GND" "2" "square"]
@@ -1851,8 +1851,8 @@ Element["" "TC115331EMTTR" "U1" "3.3V" 36.8300mm 74.4220mm -3.8300mm -0.4220mm 0
 	Attribute("device" "TC115331EMTTR")
 	Attribute("manufacturer" "MICROCHIP")
 	Attribute("manufacturer_part_number" "TC115331EMTTR")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
+	Attribute("vendor" "MICROCHIP")
+	Attribute("vendor_part_number" "TC115331EMTTR")
 	Pad[-0.7200mm 0.3800mm -0.4800mm 0.6200mm 0.5500mm 0.6000mm 0.8500mm 0.5000mm "PS" "TAB" "edge2"]
 	Pad[0.4800mm 0.6200mm 0.7200mm 0.3800mm 0.5500mm 0.6000mm 0.8500mm 0.5000mm "PS" "TAB" "edge2"]
 	Pad[0.4800mm -0.6200mm 0.7200mm -0.3800mm 0.5500mm 0.6000mm 0.8500mm 0.5000mm "PS" "TAB" ""]
@@ -1912,15 +1912,15 @@ Element["" "CC0603ZRY5V9BB104" "C8" "100nF" 23.2500mm 51.5000mm 1.8000mm -0.5000
 
 )
 
-Element["" "CC0603ZRY5V9BB104" "C7" "100nF" 31.2000mm 47.8250mm -0.5500mm 1.5750mm 0 64 ""]
+Element["selected" "CC0603ZRY5V9BB104" "C7" "100nF" 31.2000mm 47.8250mm -0.5500mm 1.5750mm 0 64 "selected"]
 (
 	Attribute("device" "CC0603ZRY5V9BB104")
 	Attribute("manufacturer" "YAEGO")
 	Attribute("manufacturer_part_number" "CC0603ZRY5V9BB104")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2366349")
-	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.2800mm 0.8500mm 0.6850mm "1" "1" "square"]
-	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.2800mm 0.8550mm 0.6850mm "2" "2" "square"]
+	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.2800mm 0.8500mm 0.6850mm "1" "1" "selected,square"]
+	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.2800mm 0.8550mm 0.6850mm "2" "2" "selected,square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
 	ElementLine [-0.7500mm 1.5000mm -0.7500mm 0.4000mm 0.1501mm]
@@ -1970,7 +1970,7 @@ Element["" "BSS138P" "Q3" "900m?" 33.0200mm 40.6400mm -1.9200mm -2.4400mm 0 77 "
 Element["" "MC0063W06035100R" "R5" "100?" 33.0200mm 45.2120mm -2.7700mm -0.5120mm 0 64 ""]
 (
 	Attribute("device" "MC0063W06035100R")
-	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer" "MULTICOMP")
 	Attribute("manufacturer_part_number" "MC0063W06035100R")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "9331689")
@@ -2024,7 +2024,7 @@ Element["" "MC0063W0603110K" "R6" "10K?" 35.8140mm 40.6400mm -0.5140mm 1.6600mm 
 Element["" "MC0063W06035100R" "R1" "100?" 27.1780mm 45.2120mm -2.7280mm -0.4120mm 0 64 ""]
 (
 	Attribute("device" "MC0063W06035100R")
-	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer" "MULTICOMP")
 	Attribute("manufacturer_part_number" "MC0063W06035100R")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "9331689")
@@ -2334,13 +2334,13 @@ Element["" "CC0603ZRY5V9BB104" "C4" "100nF" 29.2000mm 63.1500mm -0.6000mm 1.6500
 
 )
 
-Element["hidename" "" "U4" "NA" 30.4500mm 55.9000mm 0.0000 0.0000 0 100 ""]
+Element["hidename" "PIC32MX150F128C-I/TL" "U4" "NA" 30.4500mm 55.9000mm 0.0000 0.0000 0 100 ""]
 (
 	Attribute("device" "PIC32MX150F128C-I/TL")
 	Attribute("manufacturer" "MICROCHIP")
 	Attribute("manufacturer_part_number" "PIC32MX150F128C-I/TL")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
+	Attribute("vendor" "MICROCHIP")
+	Attribute("vendor_part_number" "PIC32MX150F128C-I/TL")
 	Pad[-2.2500mm -2.2500mm -2.2500mm -2.2500mm 0.2500mm 0.6000mm 0.4024mm 0.2524mm "PGC1/RB1" "36" "square"]
 	Pad[-2.2500mm -1.7500mm -2.2500mm -1.7500mm 0.2500mm 0.6000mm 0.4024mm 0.2524mm "RB2/SDA2" "1" "square"]
 	Pad[-2.2500mm -1.2500mm -2.2500mm -1.2500mm 0.2500mm 0.6000mm 0.4024mm 0.2524mm "RB3/SCL2" "2" "square"]
