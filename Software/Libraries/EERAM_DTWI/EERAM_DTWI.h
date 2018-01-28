@@ -19,6 +19,7 @@ class EERAM {
         EERAM(DTWI &d) : _dtwi(&d) {}
         
         void begin();
+        void end();
         uint8_t read(uint16_t addr);
         size_t read(uint16_t addr, uint8_t *data, size_t len);
         void write(uint16_t addr, uint8_t v);

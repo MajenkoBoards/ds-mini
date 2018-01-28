@@ -215,3 +215,6 @@ void EERAM::begin() {
     writeConfig(0b00000010); // Enable ASE
 }
 
+void EERAM::end() {
+    _dtwi->endMaster();
+}
