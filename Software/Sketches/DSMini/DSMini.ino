@@ -1,10 +1,7 @@
 /*
- * Prints "Hello World" on the OLED along with the return value of millis()
- * every 100ms.
- *
- * Needs SSD1306 support from DisplayCore
- *
- * * https://github.com/MajenkoLibraries/DisplayCore
+ * Samples the temperature every hour and sleeps in between using as little power as 
+ * possible. Wakes on a button press to display the data, and wakes 10 seconds later
+ * again to disable the screen.
  */
 
 #include <DisplayCore.h>
@@ -14,7 +11,6 @@
 #include <RTCC.h>
 #include <LowPower.h>
 #include <EERAM_DTWI.h>
-
 
 // Default pin modes when saving power
 const uint8_t defmodes[NUM_DIGITAL_PINS] = {
