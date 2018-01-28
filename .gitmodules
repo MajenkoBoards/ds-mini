@@ -1,0 +1,12 @@
+[submodule "Software/ExtraLibraries/RTCC"]
+	path = Software/ExtraLibraries/RTCC
+	url = git@github.com:MajenkoLibraries/RTCC.git
+[submodule "Software/ExtraLibraries/LowPower"]
+	path = Software/ExtraLibraries/LowPower
+	url = git@github.com:MajenkoLibraries/LowPower.git
+[submodule "Software/ExtraLibraries/DisplayCore"]
+	path = Software/ExtraLibraries/DisplayCore
+	url = git@github.com:DisplayCore/DisplayCore.git
+[submodule "Software/ExtraLibraries/SSD1306"]
+	path = Software/ExtraLibraries/SSD1306
+	url = git@github.com:DisplayCore/SSD1306.git
