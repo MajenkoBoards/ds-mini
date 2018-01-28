@@ -14,7 +14,7 @@
 #include <RTCC.h>
 #include <LowPower.h>
 #include <EERAM_DTWI.h>
-#include <Timer.h>
+
 
 // Default pin modes when saving power
 const uint8_t defmodes[NUM_DIGITAL_PINS] = {
