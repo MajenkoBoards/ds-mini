@@ -1,5 +1,5 @@
 /*
- * Samples the temperature every hour and sleeps in between using as little power as 
+ * Samples the temperature every hour and sleeps in between using as little power as
  * possible. Wakes on a button press to display the data, and wakes 10 seconds later
  * again to disable the screen.
  */
@@ -11,6 +11,9 @@
 #include <RTCC.h>
 #include <LowPower.h>
 #include <EERAM_DTWI.h>
+#include <RN4871.h>
+
+RN4871 BLE(Serial1);
 
 // Default pin modes when saving power
 const uint8_t defmodes[NUM_DIGITAL_PINS] = {
@@ -40,6 +43,7 @@ const uint8_t defmodes[NUM_DIGITAL_PINS] = {
 #define BUTTON  0x02
 #define SNOOZE  0x04
 #define SLEEP   0x08
+#define SERIAL  0x10
 
 #define NUM_TEMPS 96
 
@@ -93,27 +97,30 @@ void setup() {
 	pinMode(12, INPUT_PULLUP);
 	loadEERAMData();
 	disableSensorPower();
-
+//	initRF();
 }
 
 void loop() {
-    static uint8_t sleepMethod = SLEEP;
-    
+	static uint8_t sleepMethod = SLEEP;
 	disableMemsOsc();
-    wakeReason = 0;
-    if (sleepMethod == SLEEP) {
-    	LowPower.enterSleepMode();
-    } else if (sleepMethod == SNOOZE) {
-        LowPower.enterIdleMode();
-    }
+	wakeReason = 0;
+
+	if (sleepMethod == SLEEP) {
+		LowPower.enterSleepMode();
+	} else if (sleepMethod == SNOOZE) {
+		LowPower.enterIdleMode();
+	}
+
 	enableMemsOsc();
 
-    if (wakeReason & SNOOZE) {
-        disableSensorPower();
-        sleepMethod = SLEEP;
-    }
+	if (wakeReason & SNOOZE) {
+		disableSensorPower();
+		disableRF();
+		sleepMethod = SLEEP;
+		resetPins();
+	}
 
-    if (wakeReason & SAMPLE) {
+	if (wakeReason & SAMPLE) {
 		for (int i = 0; i < NUM_TEMPS - 1; i++) {
 			temperature[i] = temperature[i + 1];
 		}
@@ -123,41 +130,53 @@ void loop() {
 		temperature[NUM_TEMPS - 1] = emc.getTemperature();
 		emc.end();
 		saveEERAMData();
-		disableSensorPower();
+
+		if (sleepMethod == SLEEP) {
+			disableSensorPower();
+			resetPins();
+		}
 	}
 
-    if (wakeReason & BUTTON) {
-		enableSensorPower();
-		oled.initializeDevice();
-		oled.startBuffer();
-		oled.fillScreen(Color::Black);
-		RTCCValue t = RTCC.value();
-		oled.setCursor(0, 0);
-		oled.printf("%4.2f C %02d:%02d:%02d",
-		            temperature[NUM_TEMPS - 1],
-		            t.hours(), t.minutes(), t.seconds()
-		           );
-
-		for (int i = 0; i < NUM_TEMPS; i += 2) {
-			oled.setPixel(i, 31 - 5, Color::White);
-		}
-
-		for (int i = 0; i < NUM_TEMPS; i += 8) {
-			for (int j = 0; j < 25; j += 5) {
-				if (j != 5) {
-					oled.setPixel(i, 31 - j, Color::White);
-				}
-			}
-		}
-
-		for (int i = 0; i < NUM_TEMPS - 1; i++) {
-			oled.drawLine(i, (31 - 5) - temperature[i] / 2.0, i + 1, (31 - 5) - temperature[i + 1] / 2.0, Color::White);
-		}
-
-		oled.endBuffer();
-        // The 10 second tick timer must use SNOOZE not SLEEP, otherwise it will have its clock turned off.
-        sleepMethod = SNOOZE;
-        startTick();
+	if (wakeReason & BUTTON) {
+        if (sleepMethod == SNOOZE) { // Already running the display
+            disableSensorPower();
+            resetPins();
+            delay(100);
+            enableRF();
+            startTick(20);
+        } else {   
+    		enableSensorPower();
+    		oled.initializeDevice();
+    		oled.startBuffer();
+    		oled.fillScreen(Color::Black);
+    		RTCCValue t = RTCC.value();
+    		oled.setCursor(0, 0);
+    		oled.printf("%4.2f C %02d:%02d:%02d",
+    		            temperature[NUM_TEMPS - 1],
+    		            t.hours(), t.minutes(), t.seconds()
+    		           );
+    
+    		for (int i = 0; i < NUM_TEMPS; i += 2) {
+    			oled.setPixel(i, 31 - 5, Color::White);
+    		}
+    
+    		for (int i = 0; i < NUM_TEMPS; i += 8) {
+    			for (int j = 0; j < 25; j += 5) {
+    				if (j != 5) {
+    					oled.setPixel(i, 31 - j, Color::White);
+    				}
+    			}
+    		}
+    
+    		for (int i = 0; i < NUM_TEMPS - 1; i++) {
+    			oled.drawLine(i, (31 - 5) - temperature[i] / 2.0, i + 1, (31 - 5) - temperature[i + 1] / 2.0, Color::White);
+    		}
+    
+    		oled.endBuffer();
+    		// The 10 second tick timer must use SNOOZE not SLEEP, otherwise it will have its clock turned off.
+    		sleepMethod = SNOOZE;
+            startTick(5);
+        }
 	}
 }
 
@@ -194,9 +213,9 @@ void initRTC() {
 	rv.date(year, month, day);
 	rv.setValidity(RTCC_VAL_GCC); // date/time approximated using compilation time: works for developers only!!!
 	RTCC.set(rv);
-	rv.seconds(0); 
-    rv.minutes(0); 
-    rv.hours(0); 
+	rv.seconds(0);
+	rv.minutes(0);
+	rv.hours(0);
 	RTCC.alarmSet(rv);
 	RTCC.alarmMask(AL_HOUR);
 	RTCC.chimeEnable();
@@ -212,18 +231,52 @@ void displayData() {
 	wakeReason = BUTTON;
 }
 
+void initRF() {
+	enableRF();
+	BLE.begin();
+	BLE.enterCommandMode();
+	BLE.factoryReset();
+	delay(1000);
+	BLE.enterCommandMode();
+	BLE.setSerializedDeviceName("DSMini");
+	BLE.setFeatures(RN4871::Feature::NoPrompt);
+	BLE.setServices(RN4871::Service::DIS | RN4871::Service::TransparentUART);
+	BLE.setDISAppearance(GAP::Thermometer::Generic);
+	BLE.setDISFirmwareRevision("1.0");
+	BLE.setDISSoftwareRevision("1.0");
+	BLE.setDISHardwareRevision("0.2Beta");
+	BLE.setDISModelName("DSMini");
+	BLE.setDISManufacturer("Majenko Technologies");
+	BLE.setDISSerialNumber("1");
+	BLE.reboot();
+	BLE.enterDataMode();
+	disableRF();
+}
+
+void enableRF() {
+	pinMode(PIN_BLUETOOTH_POWER, OUTPUT);
+	digitalWrite(PIN_BLUETOOTH_POWER, HIGH);
+	delay(1000);
+	LowPower.enableUART2();
+	Serial1.begin(115200);
+//	Serial1.attachInterrupt(Serial1RXInterrupt);
+}
+
+void disableRF() {
+//	Serial1.detachInterrupt();
+	Serial1.end();
+	LowPower.disableUART2();
+	digitalWrite(PIN_BLUETOOTH_POWER, LOW);
+}
+
+
 void enableSensorPower() {
 	pinMode(PIN_SENSOR_POWER, OUTPUT);
 	digitalWrite(PIN_SENSOR_POWER, HIGH);
 }
 
 void disableSensorPower() {
-    
 	digitalWrite(PIN_SENSOR_POWER, LOW);
-
-	for (int i = 0; i < NUM_DIGITAL_PINS; i++) {
-		pinMode(i, defmodes[i]);
-	}
 }
 
 void disableMemsOsc() {
@@ -271,30 +324,35 @@ void saveEERAMData() {
 	eeram.end();
 }
 
-void startTick() {
-    LowPower.enableTimer4();
-
-    T4CON = 0;
-
-    // F = 32768 internal RC F_CPU (assume we switch to that soon.
-    T4CONbits.TCKPS = 7; // div 256
-    // F = 128Hz prescaled
-
-    TMR4 = 0;
-    PR4 = 1280; // 128 ticks per second, 10 seconds.
-
-    setIntPriority(_TIMER_4_VECTOR, 4, 0);
-    setIntVector(_TIMER_4_VECTOR, tickDone);
-    clearIntFlag(_TIMER_4_IRQ);
-    setIntEnable(_TIMER_4_IRQ);
-
-    // Turn it on.
-    T4CONbits.ON = 1;  
+void startTick(int secs) {
+	LowPower.enableTimer4();
+	T4CON = 0;
+	// F = 32768 internal RC F_CPU (assume we switch to that soon.
+	T4CONbits.TCKPS = 7; // div 256
+	// F = 128Hz prescaled
+	TMR4 = 0;
+	PR4 = 128 * secs; // 128 ticks per second, 10 seconds.
+	setIntPriority(_TIMER_4_VECTOR, 4, 0);
+	setIntVector(_TIMER_4_VECTOR, tickDone);
+	clearIntFlag(_TIMER_4_IRQ);
+	setIntEnable(_TIMER_4_IRQ);
+	// Turn it on.
+	T4CONbits.ON = 1;
 }
 
 void __USER_ISR tickDone() {
-    T4CONbits.ON = 0;
-    clearIntEnable(_TIMER_4_IRQ);
-    wakeReason = SNOOZE;
-    LowPower.disableTimer4();
+	T4CONbits.ON = 0;
+	clearIntEnable(_TIMER_4_IRQ);
+	wakeReason = SNOOZE;
+	LowPower.disableTimer4();
+}
+
+void resetPins() {
+	for (int i = 0; i < NUM_DIGITAL_PINS; i++) {
+		pinMode(i, defmodes[i]);
+	}
+}
+
+void Serial1RXInterrupt(int c) {
+	wakeReason = SERIAL;
 }
